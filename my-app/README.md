@@ -38,6 +38,15 @@ useState
 
 <---> ! <---> <---> ! <---> <---> ! <---> <---> ! <---> <---> ! <---> 
 
-SECTION 5 
-ps: only thought of typing down notes per topic now ._. would've been better if I thought of this earlier!
+SECTION 5 - Rendering lists and conditional content
 
+  - features to be added
+    - outputting dynamic lists of content
+    - rendering content under certain conditions
+  
+  64. Rendering lists of data
+    - pass items to be rendered via props
+    - {} single curly braces: for executing dynamic expression in jsx
+    - * jsx auto renders array of jsx elements for display inside {}
+
+  65. Using stateful lists
