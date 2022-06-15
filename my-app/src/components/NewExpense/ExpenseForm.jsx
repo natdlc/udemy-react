@@ -29,7 +29,7 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
 
 	const submitHandler = (e) => {
 		e.preventDefault();
-		const newExpenseData = { title, amount, date: new Date(date) };
+		const newExpenseData = { title, amount: +amount, date: new Date(date) };
 		onSaveExpenseData(newExpenseData);
 		setTitle("");
 		setAmount("");
@@ -37,9 +37,9 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
 		setIsBtnClicked(false);
 	};
 
-	const openFormHandler = () => {
-		setIsBtnClicked(true);
-	};
+	const openFormHandler = () => setIsBtnClicked(true);
+
+	const cancelBtnHandler = () => setIsBtnClicked(false);
 
 	return isBtnClicked ? (
 		<form onSubmit={submitHandler}>
@@ -70,6 +70,9 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
 				</div>
 			</div>
 			<div className="new-expense__actions">
+				<button onClick={cancelBtnHandler} type="button">
+					Cancel
+				</button>
 				<button type="submit">Add Expense</button>
 			</div>
 		</form>

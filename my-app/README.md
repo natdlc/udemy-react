@@ -81,3 +81,8 @@ XX. ASSIGNMENT 4
     - add new expense button instead of form
     - when btn clicked, btn disappears and form appears
     - when form btn clicked, btn without form appears
+    - *learned: add cancel btn
+    - *learned: && logic usage (very handy)
+
+69. Demo app: adding chart
+    - set style dynamically (style prop)
