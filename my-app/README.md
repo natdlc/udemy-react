@@ -68,3 +68,8 @@ XX. ASSIGNMENT
     - make filter work
     - hint1: filter arrays with filter method
     - hint2: dont change overall expenses array
+
+67. Outputting conditional content
+    - keep in mind state re-renders
+    - store jsx content in variables
+    - "abuse" && logic

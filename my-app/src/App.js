@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 const DUMMY_EXPENSES = [
@@ -33,8 +33,6 @@ const App = () => {
 
 	const addExpenseHandler = (newExpenseData) => {
 		setExpensesState((prevExpenses) =>  [newExpenseData, ...prevExpenses]);
-
-		// setExpensesState([newExpenseData, ...expensesState]);
 	};
 
 	return (
