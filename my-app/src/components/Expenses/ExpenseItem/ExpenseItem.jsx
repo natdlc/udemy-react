@@ -3,7 +3,7 @@ import "./ExpenseItem.css";
 import ExpenseDate from "../ExpenseDate/ExpenseDate";
 import Card from "../../UI/Card";
 
-//stateless / dumb / component
+//stateless / dumb / presentational component
 const ExpenseItem = (props) => {
 
 	return (

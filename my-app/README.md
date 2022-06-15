@@ -25,7 +25,6 @@ conventions
 - manage state in a few components, pass it around through props
 
 useState
-
 - if variable value changes, use this hook
 - gives react the responsibility to manage the variable's state
 - re-renders component when updater function is called
@@ -35,3 +34,10 @@ useState
 - component renders n times, n instances of useState generates
 - why const? we don't redeclare and change value of variable, react does it for us
 - *ONE STATE* is possible, not as common as multiple useStates
+
+
+<---> ! <---> <---> ! <---> <---> ! <---> <---> ! <---> <---> ! <---> 
+
+SECTION 5 
+ps: only thought of typing down notes per topic now ._. would've been better if I thought of this earlier!
+
