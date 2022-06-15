@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./ExpenseForm.css";
 const ExpenseForm = ({ onSaveExpenseData }) => {
-
-
+	const [isBtnClicked, setIsBtnClicked] = useState(false);
 	const [title, setTitle] = useState("");
 	const [amount, setAmount] = useState("");
 	const [date, setDate] = useState("");
@@ -31,13 +30,18 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
 	const submitHandler = (e) => {
 		e.preventDefault();
 		const newExpenseData = { title, amount, date: new Date(date) };
-    onSaveExpenseData(newExpenseData);
-    setTitle("");
-    setAmount("");
-    setDate("");
+		onSaveExpenseData(newExpenseData);
+		setTitle("");
+		setAmount("");
+		setDate("");
+		setIsBtnClicked(false);
 	};
 
-	return (
+	const openFormHandler = () => {
+		setIsBtnClicked(true);
+	};
+
+	return isBtnClicked ? (
 		<form onSubmit={submitHandler}>
 			<div className="new-expense__controls">
 				<div className="new-expense__control">
@@ -69,6 +73,9 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
 				<button type="submit">Add Expense</button>
 			</div>
 		</form>
+	) : (
+		<button onClick={openFormHandler}>Add New Expense</button>
 	);
 };
+
 export default ExpenseForm;

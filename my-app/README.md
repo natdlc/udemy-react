@@ -64,7 +64,7 @@ useState
     - state changes will be lost if components are stateful
     - * avoid index counters
 
-XX. ASSIGNMENT
+XX. ASSIGNMENT 3
     - make filter work
     - hint1: filter arrays with filter method
     - hint2: dont change overall expenses array
@@ -76,3 +76,8 @@ XX. ASSIGNMENT
 
 68. Adding conditional return statements
     - can return jsx from if inside component function
+
+XX. ASSIGNMENT 4
+    - add new expense button instead of form
+    - when btn clicked, btn disappears and form appears
+    - when form btn clicked, btn without form appears
