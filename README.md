@@ -136,4 +136,18 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 84. Understanding React Error Messages
 
-    - 
+    - analyzing errors in terminal
+
+85. Analyzing code flow and warnings
+
+    - analyze flow of logic in error and investigate per component
+
+86. Working with breakpoints *
+
+    - use "debugger" reserved word in VSC to where you want the devtools sources to have a breakpoint *
+
+87. Using react devtools (amazing)
+
+    - search for component
+    - see props content
+    - tree structure is seen 
