@@ -56,20 +56,19 @@ useState
     - - jsx auto renders array of jsx elements for display inside {}
 
 65. Using stateful lists
+
     - always use cb form in updater function when updating using a previous state
 
 66. Understanding keys
     - without keys, all items in the list is updated whenever it re-renders
     - leads to performance issues
     - state changes will be lost if components are stateful
-    - * avoid index counters
+    - - avoid index counters
 
-XX. ASSIGNMENT 3
-    - make filter work
-    - hint1: filter arrays with filter method
-    - hint2: dont change overall expenses array
+XX. ASSIGNMENT 3 - make filter work - hint1: filter arrays with filter method - hint2: dont change overall expenses array
 
 67. Outputting conditional content
+
     - keep in mind state re-renders
     - store jsx content in variables
     - "abuse" && logic
@@ -77,12 +76,7 @@ XX. ASSIGNMENT 3
 68. Adding conditional return statements
     - can return jsx from if inside component function
 
-XX. ASSIGNMENT 4
-    - add new expense button instead of form
-    - when btn clicked, btn disappears and form appears
-    - when form btn clicked, btn without form appears
-    - *learned: add cancel btn
-    - *learned: && logic usage (very handy)
+XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, btn disappears and form appears - when form btn clicked, btn without form appears - *learned: add cancel btn - *learned: && logic usage (very handy)
 
 69. Demo app: adding chart
     - set style dynamically (style prop)
@@ -90,11 +84,43 @@ XX. ASSIGNMENT 4
 **SECTION 6** Styling react components
 
 74. Intro
+
     - will learn:
     - conditional & dynamic styles
-    - styled components 
+    - styled components
     - css modules
     - new project, downloaded source code
 
 75. Setting dynamic inline styles
+
+    - ternary in inline style object
+    - inline styles aren't preferred
+
+76. Setting CSS classes dynamically
+
+    - adding dynamic styling using backticks and utilizing css selectors
+    - - declare dynamic style variable outside return statement
+
+77. Intro styled components
+
+    - avoid spilling styles to other components
+    - approach1: use package "styled components"
+
+78. Styled components and dynamic props
+
+    - check CourseInput.js
+    - styled component behavior: forwards all props in the underlying component
+    - you can put functions in styled components backticks to include conditional stylings (WOW)
+
+79. Styled components and media queries
+
+    - can use media queries as normally in backticks styled components
+
+80. Using CSS modules
+
+    - import styles from "./stylesheetname.css"
+    - check Button.js
+
+81. Dynamic styles with CSS modules
+
     - 
