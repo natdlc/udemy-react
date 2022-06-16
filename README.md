@@ -123,4 +123,17 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 81. Dynamic styles with CSS modules
 
+    - use brackets for dashed classnames, backticks in className prop needed
+
+**SECTION 7** Debugging react apps
+
+83. Module intro
+
+    - to learn:
+    - find & fix errors
+    - debug & analyze react apps
+    - using react dev tools
+
+84. Understanding React Error Messages
+
     - 
