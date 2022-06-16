@@ -89,10 +89,12 @@ XX. ASSIGNMENT 4
 
 **SECTION 6** Styling react components
 
-70. Intro
+74. Intro
     - will learn:
     - conditional & dynamic styles
     - styled components 
     - css modules
+    - new project, downloaded source code
 
-71. 
+75. Setting dynamic inline styles
+    - 
