@@ -85,7 +85,7 @@ XX. ASSIGNMENT 4
     - *learned: && logic usage (very handy)
 
 69. Demo app: adding chart
-    - set style dynamically (style prop)\
+    - set style dynamically (style prop)
 
 **SECTION 6** Styling react components
 
