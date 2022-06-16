@@ -151,3 +151,10 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - search for component
     - see props content
     - tree structure is seen 
+    - edit state content *wtf
+
+**SECTION 8** Time to practice: a complete practice project *NICE*
+
+89. Module intro
+
+    - practice 
