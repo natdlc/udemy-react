@@ -9,19 +9,40 @@ const AddUser = (props) => {
 
 	const addUserHandler = (event) => {
 		event.preventDefault();
+		props.onAddUser({
+			user: usernameState,
+			age: +ageState,
+			id: Math.random().toString(),
+		});
 	};
+
+	const usernameChangeHandler = (e) => setUsernameState(e.target.value);
+	const ageChangeHandler = (e) => setAgeState(e.target.value);
+
 	return (
 		<Card className={`${styles.test} test2`}>
 			<form onSubmit={addUserHandler} className={`${styles["form-wrapper"]}`}>
 				<div className={styles["form-control-wrapper"]}>
 					<label htmlFor="username">username</label>
-					<input className="basic-input" type="text" id="username" />
+					<input
+						value={usernameState}
+						onChange={usernameChangeHandler}
+						className="basic-input"
+						type="text"
+						id="username"
+					/>
 				</div>
 				<div className={styles["form-control-wrapper"]}>
 					<label htmlFor="age">age</label>
-					<input className="basic-input" type="number" id="age" />
+					<input
+						value={ageState}
+						onChange={ageChangeHandler}
+						className="basic-input"
+						type="number"
+						id="age"
+					/>
 				</div>
-				<Button>Add User</Button>
+				<Button type="submit">Add User</Button>
 			</form>
 		</Card>
 	);
