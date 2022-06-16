@@ -1,0 +1,22 @@
+.form-wrapper {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: start;
+}
+
+.form-control-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.form-control-wrapper label {
+	text-transform: capitalize;
+	font-size: 1.5rem;
+}
+
+.test {
+	border-left: 13px solid white;
+}

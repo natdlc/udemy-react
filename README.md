@@ -142,19 +142,34 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
     - analyze flow of logic in error and investigate per component
 
-86. Working with breakpoints *
+86. Working with breakpoints \*
 
-    - use "debugger" reserved word in VSC to where you want the devtools sources to have a breakpoint *
+    - use "debugger" reserved word in VSC to where you want the devtools sources to have a breakpoint \*
 
 87. Using react devtools (amazing)
 
     - search for component
     - see props content
-    - tree structure is seen 
-    - edit state content *wtf
+    - tree structure is seen
+    - edit state content \*wtf
 
-**SECTION 8** Time to practice: a complete practice project *NICE*
+**SECTION 8** Time to practice: a complete practice project _NICE_
 
 89. Module intro
 
+    - check new-project react app
+
 90. Adding user component
+
+    - downloaded new project
+
+91. Adding "card" component
+
+    - combining css modules, className prop from custom component
+    - className in custom components does not work like expected, since they are our own components, not react's built in jsx elements
+
+92. Adding "button" component
+
+    - add fallback to type props from Button component itself
+
+93. Managing user input state
