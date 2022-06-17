@@ -3,6 +3,7 @@ import Card from "../../UI/Card";
 import Button from "../../UI/Button";
 import styles from "./AddUser.module.css";
 import ErrorModal from "../../UI/ErrorModal/ErrorModal";
+import Wrapper from "../../Helpers/Wrapper";
 
 const AddUser = (props) => {
 	const [usernameState, setUsernameState] = useState("");
@@ -44,41 +45,47 @@ const AddUser = (props) => {
 	const usernameValidity = !usernameValid && styles.usernameInvalid;
 	const ageValidity = !ageValid && styles.ageInvalid;
 
-	const errorMessage = "Invalid username or age"
-				
+	const errorMessage = "Invalid username or age";
+
 	return (
-		<Card className={`${styles.test} test2`}>
-			{isErrorModalOpenedState && (
-				<ErrorModal title={"ERROR"} message={errorMessage} onModalOpened={handleErrorModalConfirm} />
-			)}
-			<form onSubmit={addUserHandler} className={`${styles["form-wrapper"]}`}>
-				<div className={`${styles["form-control-wrapper"]}`}>
-					<label className={`${usernameValidity}`} htmlFor="username">
-						username
-					</label>
-					<input
-						value={usernameState}
-						onChange={usernameChangeHandler}
-						className="basic-input"
-						type="text"
-						id="username"
+		<Wrapper>
+			<Card className={`${styles.test} test2`}>
+				{isErrorModalOpenedState && (
+					<ErrorModal
+						title={"ERROR"}
+						message={errorMessage}
+						onModalOpened={handleErrorModalConfirm}
 					/>
-				</div>
-				<div className={styles["form-control-wrapper"]}>
-					<label className={`${ageValidity}`} htmlFor="age">
-						age
-					</label>
-					<input
-						value={ageState}
-						onChange={ageChangeHandler}
-						className="basic-input"
-						type="number"
-						id="age"
-					/>
-				</div>
-				<Button type="submit">Add User</Button>
-			</form>
-		</Card>
+				)}
+				<form onSubmit={addUserHandler} className={`${styles["form-wrapper"]}`}>
+					<div className={`${styles["form-control-wrapper"]}`}>
+						<label className={`${usernameValidity}`} htmlFor="username">
+							username
+						</label>
+						<input
+							value={usernameState}
+							onChange={usernameChangeHandler}
+							className="basic-input"
+							type="text"
+							id="username"
+						/>
+					</div>
+					<div className={styles["form-control-wrapper"]}>
+						<label className={`${ageValidity}`} htmlFor="age">
+							age
+						</label>
+						<input
+							value={ageState}
+							onChange={ageChangeHandler}
+							className="basic-input"
+							type="number"
+							id="age"
+						/>
+					</div>
+					<Button type="submit">Add User</Button>
+				</form>
+			</Card>
+		</Wrapper>
 	);
 };
 export default AddUser;

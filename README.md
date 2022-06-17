@@ -177,15 +177,15 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 94. Adding validation and resetting logic
 
     - self work success
-    - * string.trim().length validates whitespaces
-    - * split fetching and outputting
+    - string.trim().length validates whitespaces
+    - split fetching and outputting
 
 95. Adding a Users List Component
 
 96. Managing a List Of Users via State
 
 97. Adding The "ErrorModal" Component
-    
+
     - adding separate div for the modal backdrop i think is preferred
 
 98. managing error state
@@ -196,9 +196,24 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 100. module intro
 
+
     - will learn
     - jsx limitations and fragments
     - get a cleaner dom with portals
     - refs and why its needed
 
-101. 
+101. jsx limitations and workarounds
+
+
+    - can't have adjacent root elements (only one root jsx element)
+    - * can enclose in an array instead of a root element
+    - note: it returns a key warning
+    - wrapping in divs not ideal as it breaks styling
+
+102. creating a wrapper component
+
+    - * helpers component can return just props.children
+
+103. react fragments
+
+    - 
