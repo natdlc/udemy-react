@@ -191,3 +191,14 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 98. managing error state
 
     - backdrop is preferred so that if it is clicked rather than the content of the modal, the modal closes
+
+**SECTION 9** Fragments, portals, refs
+
+100. module intro
+
+    - will learn
+    - jsx limitations and fragments
+    - get a cleaner dom with portals
+    - refs and why its needed
+
+101. 
