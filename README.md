@@ -177,3 +177,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 94. Adding validation and resetting logic
 
     - self work success
+    - * string.trim().length validates whitespaces
+    - * split fetching and outputting
+
+95. Managing list of users via state

@@ -22,8 +22,6 @@ function App() {
 	};
 
   const deleteUserHandler = (userId) => {
-    console.log('clicked');
-    console.log(userId);
 		setUsersState((prevState) => {
 			const newUsers = [...prevState];
 			return newUsers.filter((user) => userId !== user.id);

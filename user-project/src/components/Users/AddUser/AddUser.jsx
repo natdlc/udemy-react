@@ -11,11 +11,11 @@ const AddUser = (props) => {
 
 	const addUserHandler = (event) => {
 		event.preventDefault();
-		if (usernameState === "" || ageState === "") {
+		if (usernameState.trim().length === 0 || ageState < 1 || ageState > 150) {
 			!usernameState && setUsernameValid(false);
-			!ageState && setAgeValid(false);
-			return 
-		};
+			!(ageState >= 1 && ageState <= 150) && setAgeValid(false);
+			return;
+		}
 		props.onAddUser({
 			user: usernameState,
 			age: +ageState,
@@ -39,12 +39,11 @@ const AddUser = (props) => {
 
 	return (
 		<Card className={`${styles.test} test2`}>
-			<form
-				onSubmit={addUserHandler}
-				className={`${styles["form-wrapper"]}`}
-			>
+			<form onSubmit={addUserHandler} className={`${styles["form-wrapper"]}`}>
 				<div className={`${styles["form-control-wrapper"]}`}>
-					<label className={`${usernameValidity}`} htmlFor="username">username</label>
+					<label className={`${usernameValidity}`} htmlFor="username">
+						username
+					</label>
 					<input
 						value={usernameState}
 						onChange={usernameChangeHandler}
@@ -54,7 +53,9 @@ const AddUser = (props) => {
 					/>
 				</div>
 				<div className={styles["form-control-wrapper"]}>
-					<label className={`${ageValidity}`} htmlFor="age">age</label>
+					<label className={`${ageValidity}`} htmlFor="age">
+						age
+					</label>
 					<input
 						value={ageState}
 						onChange={ageChangeHandler}

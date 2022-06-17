@@ -7,7 +7,7 @@ const User = (props) => {
 	return (
 		<div onClick={deleteUserHandler} className={classes.user}>
 			<p>{props.username}</p>
-			<p>{props.age}</p>
+			<p>age: {props.age}</p>
 		</div>
 	);
 };
