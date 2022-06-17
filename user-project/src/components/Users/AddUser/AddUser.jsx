@@ -6,24 +6,45 @@ import styles from "./AddUser.module.css";
 const AddUser = (props) => {
 	const [usernameState, setUsernameState] = useState("");
 	const [ageState, setAgeState] = useState("");
+	const [usernameValid, setUsernameValid] = useState(true);
+	const [ageValid, setAgeValid] = useState(true);
 
 	const addUserHandler = (event) => {
 		event.preventDefault();
+		if (usernameState === "" || ageState === "") {
+			!usernameState && setUsernameValid(false);
+			!ageState && setAgeValid(false);
+			return 
+		};
 		props.onAddUser({
 			user: usernameState,
 			age: +ageState,
 			id: Math.random().toString(),
 		});
+		setUsernameState("");
+		setAgeState("");
 	};
 
-	const usernameChangeHandler = (e) => setUsernameState(e.target.value);
-	const ageChangeHandler = (e) => setAgeState(e.target.value);
+	const usernameChangeHandler = (e) => {
+		setUsernameValid(true);
+		setUsernameState(e.target.value);
+	};
+	const ageChangeHandler = (e) => {
+		setAgeValid(true);
+		setAgeState(e.target.value);
+	};
+
+	const usernameValidity = !usernameValid && styles.usernameInvalid;
+	const ageValidity = !ageValid && styles.ageInvalid;
 
 	return (
 		<Card className={`${styles.test} test2`}>
-			<form onSubmit={addUserHandler} className={`${styles["form-wrapper"]}`}>
-				<div className={styles["form-control-wrapper"]}>
-					<label htmlFor="username">username</label>
+			<form
+				onSubmit={addUserHandler}
+				className={`${styles["form-wrapper"]}`}
+			>
+				<div className={`${styles["form-control-wrapper"]}`}>
+					<label className={`${usernameValidity}`} htmlFor="username">username</label>
 					<input
 						value={usernameState}
 						onChange={usernameChangeHandler}
@@ -33,7 +54,7 @@ const AddUser = (props) => {
 					/>
 				</div>
 				<div className={styles["form-control-wrapper"]}>
-					<label htmlFor="age">age</label>
+					<label className={`${ageValidity}`} htmlFor="age">age</label>
 					<input
 						value={ageState}
 						onChange={ageChangeHandler}

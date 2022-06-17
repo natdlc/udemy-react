@@ -157,11 +157,11 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 89. Module intro
 
-    - check new-project react app
+    - check user-project react app
 
 90. Adding user component
 
-    - downloaded new project
+    - downloaded user project
 
 91. Adding "card" component
 
@@ -173,3 +173,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - add fallback to type props from Button component itself
 
 93. Managing user input state
+
+94. Adding validation and resetting logic
+
+    - self work success
