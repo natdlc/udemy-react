@@ -44,20 +44,7 @@ const AddUser = (props) => {
 	const usernameValidity = !usernameValid && styles.usernameInvalid;
 	const ageValidity = !ageValid && styles.ageInvalid;
 
-	const errorMessage = !(usernameValid && ageValid) ?
-		`
-			<Username can't be empty>
-			<Age is empty or invalid: ${ageState}>
-			` :
-		!usernameValid ?
-			` 
-				<Username can't be empty>
-				` :
-			!ageValid ?
-				` 
-				<Age is empty or invalid: "${ageState}">
-				` :
-				"";
+	const errorMessage = "Invalid username or age"
 				
 			
 

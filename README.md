@@ -185,3 +185,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 96. Managing a List Of Users via State
 
 97. Adding The "ErrorModal" Component
+    
+    - adding separate div for the modal backdrop i think is preferred
+
+98. managing error state
