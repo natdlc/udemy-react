@@ -46,8 +46,6 @@ const AddUser = (props) => {
 
 	const errorMessage = "Invalid username or age"
 				
-			
-
 	return (
 		<Card className={`${styles.test} test2`}>
 			{isErrorModalOpenedState && (

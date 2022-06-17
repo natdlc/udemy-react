@@ -189,3 +189,5 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - adding separate div for the modal backdrop i think is preferred
 
 98. managing error state
+
+    - backdrop is preferred so that if it is clicked rather than the content of the modal, the modal closes
