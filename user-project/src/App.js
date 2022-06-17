@@ -6,7 +6,7 @@ import UsersDisplay from "./components/Users/UsersDisplay/UsersDisplay";
 import Card from "./components/UI/Card";
 
 const DUMMY_USERS = [
-	{ user: "johnsmith", age: 25, id: "u1" },
+	{ user: "thorsmith", age: 25, id: "u1" },
 	{ user: "nashcorpuz", age: 33, id: "u2" },
 ];
 

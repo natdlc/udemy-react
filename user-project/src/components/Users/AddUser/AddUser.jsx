@@ -2,16 +2,23 @@ import { useState } from "react";
 import Card from "../../UI/Card";
 import Button from "../../UI/Button";
 import styles from "./AddUser.module.css";
+import ErrorModal from "../../UI/ErrorModal/ErrorModal";
 
 const AddUser = (props) => {
 	const [usernameState, setUsernameState] = useState("");
 	const [ageState, setAgeState] = useState("");
 	const [usernameValid, setUsernameValid] = useState(true);
 	const [ageValid, setAgeValid] = useState(true);
+	const [isErrorModalOpenedState, setIsErrorModalOpenedState] = useState(false);
+
+	const handleErrorModalConfirm = (isModalOpened) => {
+		setIsErrorModalOpenedState(isModalOpened);
+	};
 
 	const addUserHandler = (event) => {
 		event.preventDefault();
 		if (usernameState.trim().length === 0 || ageState < 1 || ageState > 150) {
+			setIsErrorModalOpenedState(true);
 			!usernameState && setUsernameValid(false);
 			!(ageState >= 1 && ageState <= 150) && setAgeValid(false);
 			return;
@@ -37,8 +44,28 @@ const AddUser = (props) => {
 	const usernameValidity = !usernameValid && styles.usernameInvalid;
 	const ageValidity = !ageValid && styles.ageInvalid;
 
+	const errorMessage = !(usernameValid && ageValid) ?
+		`
+			<Username can't be empty>
+			<Age is empty or invalid: ${ageState}>
+			` :
+		!usernameValid ?
+			` 
+				<Username can't be empty>
+				` :
+			!ageValid ?
+				` 
+				<Age is empty or invalid: "${ageState}">
+				` :
+				"";
+				
+			
+
 	return (
 		<Card className={`${styles.test} test2`}>
+			{isErrorModalOpenedState && (
+				<ErrorModal title={"ERROR"} message={errorMessage} onModalOpened={handleErrorModalConfirm} />
+			)}
 			<form onSubmit={addUserHandler} className={`${styles["form-wrapper"]}`}>
 				<div className={`${styles["form-control-wrapper"]}`}>
 					<label className={`${usernameValidity}`} htmlFor="username">

@@ -180,4 +180,8 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - * string.trim().length validates whitespaces
     - * split fetching and outputting
 
-95. Managing list of users via state
+95. Adding a Users List Component
+
+96. Managing a List Of Users via State
+
+97. Adding The "ErrorModal" Component
