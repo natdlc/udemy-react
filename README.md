@@ -387,7 +387,11 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - follow udemy link for steps refresher
 
 126. React Context Limitations
-     3min
+
+    - not a replacement for component configuration, props only
+    - not optimized for high frequency changes
+    - for app-wide state changes, use redux
+    - not used to replace all comms and props
 
 127. Learning the "Rules of Hooks"
      7min
