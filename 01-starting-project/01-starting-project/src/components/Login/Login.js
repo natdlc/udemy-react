@@ -12,6 +12,10 @@ const Login = (props) => {
 	const [formIsValid, setFormIsValid] = useState(false);
 
 	useEffect(() => {
+		console.log("effect running");
+	});
+
+	useEffect(() => {
 		const identifier = setTimeout(() => {
 			console.log("validityruns");
 			setFormIsValid(

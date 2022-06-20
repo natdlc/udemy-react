@@ -296,6 +296,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - one main job: handle side effects
     - side effects often are: http requests, keystroke listening
 
+
 113. What to add & Not to add as Dependencies
 
     - refer to udemy link https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25871518#content
@@ -308,8 +309,15 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - does not run before the first side effect function execution
 
 115. useEffect Summary
+
+    - useEffect runs after every component render cycle
+    - useEffect with [] dependency runs once
+    - useEffect with [dependencySample] reruns whenever component is reevaluated and dependencySample state/prop changes
+    - useEffect cleanup function runs before useEffect function as a whole runs, but not the first time useEffect function runs, and when component is removed
+
 116. Introducing useReducer & Reducers In General
-     9 min
+    
+    - 
 
 117. Using the useReducer() Hook
      14min
