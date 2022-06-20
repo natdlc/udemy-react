@@ -399,7 +399,8 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - always add everything you refer to inside of useEffect as a dependency
 
 128. Refactoring an Input Component
-     6min
+
+    - utilization of props into new components for <Input/>
 
 129. Diving into "Forward Refs"
      14min
