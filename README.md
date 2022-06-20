@@ -317,10 +317,18 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 116. Introducing useReducer & Reducers In General
     
-    - 
+    - built in hook
+    - helps with state management
+    - like useState but with more capabilities
+    - for more complex state
+    - sample: multiple states, multiple ways of changing it, dependencies to other states
+    - replacement for useState if you need "more powerful state management"
+    - rule: avoid depending on a previous state of a different state when updating a separate state
+    - if you update a state which depends on another state
 
 117. Using the useReducer() Hook
-     14min
+    
+    - 
 
 118. useReducer & useEffect
      10min
