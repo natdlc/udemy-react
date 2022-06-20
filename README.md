@@ -357,10 +357,22 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 122. Using the React Context API
 
-    - 
+    - manage state behind the scenes
+    - React.createContext() -- takes a default context (component-wide state), can be just a string, can be an object (often-used)
+    - ^ returns an object that also contains components
+    - ^ to use context:
+    - 1. provide it: tells react "hey, here's my context, all components that are wrapped by it should have access to it"
+    - 2. consume it: hook into it / listen to it
+    - providing: wrap in jsx code all the components that should be able to tap/listen into that context
+    - ^ components that aren't wrapped in it won't be able to listen
+    - listening in two ways:
+    - 1. auth context consumer
+    - 2. react hook (typically used)
+    - note: provider only used for changing states, the #1 auth context consumer way is for displaying data only
 
 123. Tapping Into Context with the useContext Hook
-     2min
+
+    - 
 
 124. Making Context Dynamic
      5min
