@@ -2,10 +2,13 @@ NOTES
 
 ESSENTIALS
 
-basics
+MOST IMPORTANT
 
 - normal variable declarations does not re-render the component, useState should be used for updating content
 - every component receives its own "state"
+- "react" contains features, state management, etc
+- "react-dom" uses "react" to bring those logic and features to the web browser
+- unmounts from DOM: whenever component is reused
 
 eventprops (custom)
 
@@ -177,17 +180,183 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 94. Adding validation and resetting logic
 
     - self work success
-    - * string.trim().length validates whitespaces
-    - * split fetching and outputting
+    - string.trim().length validates whitespaces
+    - split fetching and outputting
 
 95. Adding a Users List Component
 
 96. Managing a List Of Users via State
 
 97. Adding The "ErrorModal" Component
-    
+
     - adding separate div for the modal backdrop i think is preferred
 
 98. managing error state
 
     - backdrop is preferred so that if it is clicked rather than the content of the modal, the modal closes
+
+**SECTION 9** Fragments, portals, refs
+
+100. module intro
+
+
+    - will learn
+    - jsx limitations and fragments
+    - get a cleaner dom with portals
+    - refs and why its needed
+
+101. jsx limitations and workarounds
+
+
+    - can't have adjacent root elements (only one root jsx element)
+    - * can enclose in an array instead of a root element
+    - note: it returns a key warning
+    - wrapping in divs not ideal as it breaks styling
+
+102. creating a wrapper component
+
+
+    - * helpers component can return just props.children
+
+103. react fragments
+
+
+    - <></> auto wrapper component (shorter)
+
+104. react portals
+
+
+    - nested modals/side-drawers/dialogues aren't ideal
+    - like making a <div> function like a <button>
+    - don't include the modal code in section where it is activated from, instead put it outside that section so it don't interfere with the flow of the code
+
+105. working with portals (SUPER IMPORTANT REACT CONCEPT IN HERE)
+
+
+    - "react" contains features, state management, etc
+    - "react-dom" uses "react" to bring those logic and features to the web browser
+    - portal can be used anywhere jsx can be declared
+
+106. working with refs
+
+
+    - sets up connection between html element being rendered and other js code
+    - ref prop
+    - built in
+    - connect any html element to references
+    - often done in inputs
+    - benefit
+    - AVOID: manipulating dom directly
+    - exception for lesson context: current value is reset
+
+107. controlled vs uncontrolled components
+
+
+    - think of it as controlled vs uncontrolled "by react"
+    - accessing values with ref is called uncontrolled components
+    - why? because internal state (current.value) is not controlled by react
+
+**SECTION 10** advanced: handling side effects, using reducers, and using context api - LET'S GO DUDE
+
+109. module intro
+
+    - will learn
+    - effects, reducers, and context
+    - working with (side) effects
+    - managing more complex state with reducers
+    - managing app-wide or component-wide state with context
+
+110. What are "Side Effects" & Introducing useEffect
+
+    - what is "effect" or "side effect"
+    - >> react's main job is render UI & react to user input
+    - >> evaluate and render jsx
+    - >> manage state and props
+    - >> react to user events and inputs
+    - >> re evaluate component upon state and prop changes
+    - >> prop changes
+    - "baked into" React via "tools" and features covered in the course (ie useState, hook, props, etc)
+    - "side effects"
+    - >> anything else
+    - >> samples:
+    - >> store data in browser storage
+    - >> send http requests to backend
+    - >> set & manage timers
+    - >> these tasks must happen outside of normal component evaluation and render cycle, especially since they might block / delay rendering (async http requests)
+
+111. Using the useEffect() Hook
+    
+    - calling state updater function in component-level inside any code blocks that changes the state of the state variable will cause infinite loop
+    - useEffect() controls this action
+    - runs after the component loads
+
+112. useEffect & Dependencies
+
+    - one code in one place which reruns whenever one of dependencies change
+    - one main job: handle side effects
+    - side effects often are: http requests, keystroke listening
+
+
+113. What to add & Not to add as Dependencies
+
+    - refer to udemy link https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25871518#content
+
+114. Using the useEffect Cleanup Function
+
+    - debouncing: ie add delay to every user input to only send hypothetical http requests when necessary and not every keystroke
+    - returning a cleanup function from a useEffect
+    - cleanup function runs before every new side effect function execution and before component is removed
+    - does not run before the first side effect function execution
+
+115. useEffect Summary
+
+    - useEffect runs after every component render cycle
+    - useEffect with [] dependency runs once
+    - useEffect with [dependencySample] reruns whenever component is reevaluated and dependencySample state/prop changes
+    - useEffect cleanup function runs before useEffect function as a whole runs, but not the first time useEffect function runs, and when component is removed
+
+116. Introducing useReducer & Reducers In General
+    
+    - 
+
+117. Using the useReducer() Hook
+     14min
+
+118. useReducer & useEffect
+     10min
+     Start
+119. Adding Nested Properties As Dependencies To useEffect
+     1min
+
+120. useReducer vs useState for State Management
+     4min
+
+121. Introducing React Context (Context API)
+     7min
+
+122. Using the React Context API
+     11min
+
+123. Tapping Into Context with the useContext Hook
+     2min
+
+124. Making Context Dynamic
+     5min
+
+125. Building & Using a Custom Context Provider Component
+     9min
+
+126. React Context Limitations
+     3min
+
+127. Learning the "Rules of Hooks"
+     7min
+
+128. Refactoring an Input Component
+     6min
+
+129. Diving into "Forward Refs"
+     14min
+     Start
+130. Module Resources
+     1min
