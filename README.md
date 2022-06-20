@@ -394,7 +394,9 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - not used to replace all comms and props
 
 127. Learning the "Rules of Hooks"
-     7min
+    
+    - check pdf in natdev folder 
+    - always add everything you refer to inside of useEffect as a dependency
 
 128. Refactoring an Input Component
      6min
