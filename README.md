@@ -328,11 +328,12 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 117. Using the useReducer() Hook
     
-    - 
+    - const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn);
 
 118. useReducer & useEffect
-     10min
-     Start
+
+    - 
+    
 119. Adding Nested Properties As Dependencies To useEffect
      1min
 
