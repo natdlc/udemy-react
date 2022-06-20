@@ -259,7 +259,6 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 109. module intro
 
-
     - will learn
     - effects, reducers, and context
     - working with (side) effects
@@ -267,7 +266,6 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - managing app-wide or component-wide state with context
 
 110. What are "Side Effects" & Introducing useEffect
-
 
     - what is "effect" or "side effect"
     - >> react's main job is render UI & react to user input
@@ -286,6 +284,9 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - >> these tasks must happen outside of normal component evaluation and render cycle, especially since they might block / delay rendering (async http requests)
 
 111. Using the useEffect() Hook
+    
+    - 
+
 112. useEffect & Dependencies
 113. What to add & Not to add as Dependencies
 114. Using the useEffect Cleanup Function
