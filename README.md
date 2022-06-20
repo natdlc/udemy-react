@@ -375,10 +375,14 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - for more elegant use, useContext
 
 124. Making Context Dynamic
-     5min
+
+    - you don't need to put anything inside the React.createContext() function invocation anymore if you are using Context.Provider approach
+    - props for passing data to components, mechanism for configuring components and reusable
+    - only if you're forwarding it to a lot of other components, use context api
 
 125. Building & Using a Custom Context Provider Component
-     9min
+    
+    - 
 
 126. React Context Limitations
      3min
