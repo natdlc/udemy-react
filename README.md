@@ -8,6 +8,7 @@ MOST IMPORTANT
 - every component receives its own "state"
 - "react" contains features, state management, etc
 - "react-dom" uses "react" to bring those logic and features to the web browser
+- unmounts from DOM: whenever component is reused
 
 eventprops (custom)
 
@@ -300,6 +301,12 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - refer to udemy link https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25871518#content
 
 114. Using the useEffect Cleanup Function
+
+    - debouncing: ie add delay to every user input to only send hypothetical http requests when necessary and not every keystroke
+    - returning a cleanup function from a useEffect
+    - cleanup function runs before every new side effect function execution and before component is removed
+    - does not run before the first side effect function execution
+
 115. useEffect Summary
 116. Introducing useReducer & Reducers In General
      9 min
