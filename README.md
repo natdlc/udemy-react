@@ -403,7 +403,10 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - utilization of props into new components for <Input/>
 
 129. Diving into "Forward Refs"
-     14min
-     Start
+
+    - interact with the input component imperatively
+    - check bookmarks forwardRef for more info
+    - you can expose functions / other data types
+
 130. Module Resources
-     1min
+
