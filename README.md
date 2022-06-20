@@ -332,13 +332,16 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 118. useReducer & useEffect
 
-    - 
-    
-119. Adding Nested Properties As Dependencies To useEffect
-     1min
+    - extract object properties from reducer state objects
+    - to specify which action you want useEffect to track in the reducer object
 
+119. Adding Nested Properties As Dependencies To useEffect
+     
+    - key thing is NOT that we use destructuring but that we pass specific properties instead of the entire object as a dependency.
+    
 120. useReducer vs useState for State Management
-     4min
+     
+    - 
 
 121. Introducing React Context (Context API)
      7min
