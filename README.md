@@ -290,7 +290,14 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - runs after the component loads
 
 112. useEffect & Dependencies
+
+    - one code in one place which reruns whenever one of dependencies change
+    - one main job: handle side effects
+    - side effects often are: http requests, keystroke listening
+
 113. What to add & Not to add as Dependencies
+
+    - 
 114. Using the useEffect Cleanup Function
 115. useEffect Summary
 116. Introducing useReducer & Reducers In General
