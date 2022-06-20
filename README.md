@@ -341,13 +341,23 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     
 120. useReducer vs useState for State Management
      
-    - 
+    - note: useReducer for when using useState is cumbersome or gets lot of bugs / unintended behaviors 
+    - note: don't overuse useReducer
+    - useState for main state management tool 
+    - useState for independent pieces of state/data
+    - useState if state updates are easy and limited to few updates 
+    - useReducer if you need more power
+    - useReducer if related state data
+    - useReducer if more complex state updates
 
 121. Introducing React Context (Context API)
-     7min
+    
+    - avoiding prop chains
+    - useContext: "behind-the-scenes" state storage
 
 122. Using the React Context API
-     11min
+
+    - 
 
 123. Tapping Into Context with the useContext Hook
      2min
