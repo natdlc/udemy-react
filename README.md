@@ -297,7 +297,8 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 113. What to add & Not to add as Dependencies
 
-    - 
+    - refer to udemy link https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25871518#content
+
 114. Using the useEffect Cleanup Function
 115. useEffect Summary
 116. Introducing useReducer & Reducers In General
