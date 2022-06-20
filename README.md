@@ -372,7 +372,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 123. Tapping Into Context with the useContext Hook
 
-    - 
+    - for more elegant use, useContext
 
 124. Making Context Dynamic
      5min
