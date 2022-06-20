@@ -285,7 +285,9 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 111. Using the useEffect() Hook
     
-    - 
+    - calling state updater function in component-level inside any code blocks that changes the state of the state variable will cause infinite loop
+    - useEffect() controls this action
+    - runs after the component loads
 
 112. useEffect & Dependencies
 113. What to add & Not to add as Dependencies
