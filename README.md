@@ -382,7 +382,9 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 125. Building & Using a Custom Context Provider Component
     
-    - 
+    - for better ide autocompletion, add necessary properties in the context js file's React.createContext() argument
+    - create a separate custom context provider component
+    - follow udemy link for steps refresher
 
 126. React Context Limitations
      3min
