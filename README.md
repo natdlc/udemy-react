@@ -44,6 +44,7 @@ useState
 - _ONE STATE_ is possible, not as common as multiple useStates
 - - when using a state's previous value while updating it to a new one inside the state updater function, **ALWAYS** use the callback function form with the "prevState" parameter, **WHY?** to ensure that you always operate on the latest state snapshot, this is because React **SCHEDULES** state updates, it doesn't perform them instantly.
 
+
 <---> ! <---> <---> ! <---> <---> ! <---> <---> ! <---> <---> ! <--->
 
 **SECTION 5** - Rendering lists and conditional content
@@ -472,8 +473,11 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - prop drilled in meal item form for unique id values per input
 
 139. Working on the "Shopping Cart" Component
-     5min
-     Play
+
+
+    - modal structure
+    - can include jsx in helper const (<ul></ul>)
+
 140. Adding a Modal via a React Portal
      8min
      Play
