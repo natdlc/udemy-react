@@ -505,11 +505,15 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - reducer naming must be internalized
 
 145. Working with Refs & Forward Refs
-     11min
-     Play
+
+
+    - self complete add to cart logic
+
 146. Outputting Cart Items
-     7min
-     Play
+
+
+    - 
+
 147. Working on a More Complex Reducer Logic
      5min
      Play
