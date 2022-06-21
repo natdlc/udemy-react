@@ -479,8 +479,10 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - can include jsx in helper const (<ul></ul>)
 
 140. Adding a Modal via a React Portal
-     8min
-     Play
+
+
+    - creating portal
+
 141. Managing Cart & Modal State
      11min
      Play
