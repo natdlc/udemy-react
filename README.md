@@ -512,7 +512,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 146. Outputting Cart Items
 
 
-    - 
+    - self complete updating cart
 
 147. Working on a More Complex Reducer Logic
      5min

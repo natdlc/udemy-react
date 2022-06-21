@@ -9,11 +9,11 @@ const MealItemForm = (props) => {
 	const submitHandler = (e) => {
 		e.preventDefault();
 		const enteredAmount = +amountInputRef.current.value;
-
 		if (enteredAmount.length === 0 || enteredAmount < 1 || enteredAmount > 5) {
 			setAmountValid(false);
 			return;
 		}
+
 		setAmountValid(true);
 		props.onAddToCart(enteredAmount);
 	};
