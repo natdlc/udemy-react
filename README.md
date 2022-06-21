@@ -500,8 +500,10 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - reduced cart context items array to reflect # of amount instead of # of food category in cart
 
 144. Adding a Cart Reducer
-     11min
-     Play
+
+
+    - reducer naming must be internalized
+
 145. Working with Refs & Forward Refs
      11min
      Play
