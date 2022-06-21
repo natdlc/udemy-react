@@ -461,9 +461,11 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - added card component
     - wrapped ul meals list with Card
 
-137. Adding a Form
-     10min
-     Start
+137. Adding a Form (IMPORTANT INFO PRESENT)
+
+
+    - spread operator in jsx element attribute
+
 138. Fixing Form Input IDs
      1min
      Play
