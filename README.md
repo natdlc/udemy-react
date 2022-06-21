@@ -451,8 +451,10 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - render svg component (cartIcon)
 
 135. Adding a "Meals" Component
-     9min
-     Play
+
+
+    - helper constant variable = mealsList
+
 136. Adding Individual Meal Items & Displaying Them
      10min
      Play
