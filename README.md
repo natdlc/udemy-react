@@ -456,8 +456,11 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - helper constant variable = mealsList
 
 136. Adding Individual Meal Items & Displaying Them
-     10min
-     Play
+
+
+    - added card component
+    - wrapped ul meals list with Card
+
 137. Adding a Form
      10min
      Start
