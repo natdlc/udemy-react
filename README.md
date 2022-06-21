@@ -260,6 +260,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 109. module intro
 
+
     - will learn
     - effects, reducers, and context
     - working with (side) effects
@@ -267,6 +268,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - managing app-wide or component-wide state with context
 
 110. What are "Side Effects" & Introducing useEffect
+
 
     - what is "effect" or "side effect"
     - >> react's main job is render UI & react to user input
@@ -285,23 +287,26 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - >> these tasks must happen outside of normal component evaluation and render cycle, especially since they might block / delay rendering (async http requests)
 
 111. Using the useEffect() Hook
-    
+
+
     - calling state updater function in component-level inside any code blocks that changes the state of the state variable will cause infinite loop
     - useEffect() controls this action
     - runs after the component loads
 
 112. useEffect & Dependencies
 
+
     - one code in one place which reruns whenever one of dependencies change
     - one main job: handle side effects
     - side effects often are: http requests, keystroke listening
 
-
 113. What to add & Not to add as Dependencies
+
 
     - refer to udemy link https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25871518#content
 
 114. Using the useEffect Cleanup Function
+
 
     - debouncing: ie add delay to every user input to only send hypothetical http requests when necessary and not every keystroke
     - returning a cleanup function from a useEffect
@@ -310,13 +315,15 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 115. useEffect Summary
 
+
     - useEffect runs after every component render cycle
     - useEffect with [] dependency runs once
     - useEffect with [dependencySample] reruns whenever component is reevaluated and dependencySample state/prop changes
     - useEffect cleanup function runs before useEffect function as a whole runs, but not the first time useEffect function runs, and when component is removed
 
 116. Introducing useReducer & Reducers In General
-    
+
+
     - built in hook
     - helps with state management
     - like useState but with more capabilities
@@ -327,35 +334,41 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - if you update a state which depends on another state
 
 117. Using the useReducer() Hook
-    
+
+
     - const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn);
 
 118. useReducer & useEffect
+
 
     - extract object properties from reducer state objects
     - to specify which action you want useEffect to track in the reducer object
 
 119. Adding Nested Properties As Dependencies To useEffect
-     
+
+
     - key thing is NOT that we use destructuring but that we pass specific properties instead of the entire object as a dependency.
-    
+
 120. useReducer vs useState for State Management
-     
-    - note: useReducer for when using useState is cumbersome or gets lot of bugs / unintended behaviors 
+
+
+    - note: useReducer for when using useState is cumbersome or gets lot of bugs / unintended behaviors
     - note: don't overuse useReducer
-    - useState for main state management tool 
+    - useState for main state management tool
     - useState for independent pieces of state/data
-    - useState if state updates are easy and limited to few updates 
+    - useState if state updates are easy and limited to few updates
     - useReducer if you need more power
     - useReducer if related state data
     - useReducer if more complex state updates
 
 121. Introducing React Context (Context API)
-    
+
+
     - avoiding prop chains
     - useContext: "behind-the-scenes" state storage
 
 122. Using the React Context API
+
 
     - manage state behind the scenes
     - React.createContext() -- takes a default context (component-wide state), can be just a string, can be an object (often-used)
@@ -372,21 +385,25 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 123. Tapping Into Context with the useContext Hook
 
+
     - for more elegant use, useContext
 
 124. Making Context Dynamic
+
 
     - you don't need to put anything inside the React.createContext() function invocation anymore if you are using Context.Provider approach
     - props for passing data to components, mechanism for configuring components and reusable
     - only if you're forwarding it to a lot of other components, use context api
 
 125. Building & Using a Custom Context Provider Component
-    
+
+
     - for better ide autocompletion, add necessary properties in the context js file's React.createContext() argument
     - create a separate custom context provider component
     - follow udemy link for steps refresher
 
 126. React Context Limitations
+
 
     - not a replacement for component configuration, props only
     - not optimized for high frequency changes
@@ -394,15 +411,18 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - not used to replace all comms and props
 
 127. Learning the "Rules of Hooks"
-    
-    - check pdf in natdev folder 
+
+
+    - check pdf in natdev folder
     - always add everything you refer to inside of useEffect as a dependency
 
 128. Refactoring an Input Component
 
+
     - utilization of props into new components for <Input/>
 
 129. Diving into "Forward Refs"
+
 
     - interact with the input component imperatively
     - check bookmarks forwardRef for more info
@@ -414,6 +434,63 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 131. Module intro
 
-132. Starting setup
+132. Starting Setup
 
-    - 
+
+    - folder management: cart, layout, meals, ui
+
+133. Adding a "Header" Component
+
+
+    -
+
+134. Adding the "Cart" Button Component
+     5min
+     Play
+135. Adding a "Meals" Component
+     9min
+     Play
+136. Adding Individual Meal Items & Displaying Them
+     10min
+     Play
+137. Adding a Form
+     10min
+     Start
+138. Fixing Form Input IDs
+     1min
+     Play
+139. Working on the "Shopping Cart" Component
+     5min
+     Play
+140. Adding a Modal via a React Portal
+     8min
+     Play
+141. Managing Cart & Modal State
+     11min
+     Play
+142. Adding a Cart Context
+     8min
+     Play
+143. Using the Context
+     5min
+     Play
+144. Adding a Cart Reducer
+     11min
+     Play
+145. Working with Refs & Forward Refs
+     11min
+     Play
+146. Outputting Cart Items
+     7min
+     Play
+147. Working on a More Complex Reducer Logic
+     5min
+     Play
+148. Making Items Removable
+     8min
+     Play
+149. Using the useEffect Hook
+     8min
+     Start
+150. Module Resources
+     1min
