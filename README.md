@@ -484,8 +484,12 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - creating portal
 
 141. Managing Cart & Modal State
-     11min
-     Play
+
+
+    - self completion of step success!
+    - can do this with context, but optional
+    - added to backdrop modal close handler
+
 142. Adding a Cart Context
      8min
      Play
