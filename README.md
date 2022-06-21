@@ -442,11 +442,14 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 133. Adding a "Header" Component
 
 
-    -
+    - Header.jsx, Header.module.css
+    - img adding in react
 
 134. Adding the "Cart" Button Component
-     5min
-     Play
+
+
+    - render svg component (cartIcon)
+
 135. Adding a "Meals" Component
      9min
      Play
