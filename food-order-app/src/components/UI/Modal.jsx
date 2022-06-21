@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom";
 import classes from "./Modal.module.css";
-import Card from "./Card";
 
 const Backdrop = (props) => {
 	return <div onClick={props.onClick} className={classes.backdrop} />;

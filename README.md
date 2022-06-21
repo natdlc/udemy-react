@@ -44,7 +44,6 @@ useState
 - _ONE STATE_ is possible, not as common as multiple useStates
 - - when using a state's previous value while updating it to a new one inside the state updater function, **ALWAYS** use the callback function form with the "prevState" parameter, **WHY?** to ensure that you always operate on the latest state snapshot, this is because React **SCHEDULES** state updates, it doesn't perform them instantly.
 
-
 <---> ! <---> <---> ! <---> <---> ! <---> <---> ! <---> <---> ! <--->
 
 **SECTION 5** - Rendering lists and conditional content
@@ -491,8 +490,10 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - added to backdrop modal close handler
 
 142. Adding a Cart Context
-     8min
-     Play
+
+
+    - cart items length made shown on headercartbutton (success self complete!)
+
 143. Using the Context
      5min
      Play
