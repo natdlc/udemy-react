@@ -518,6 +518,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 
     - refactored self completed logic to shorter code, room for improvement found
+    - technique to leaner ife block
 
 148. Making Items Removable
      8min
