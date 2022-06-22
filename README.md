@@ -522,7 +522,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 148. Making Items Removable
 
-    
+
     - self activity work: SUCCESS
     - added add cart item from cart modal capability
 
@@ -533,4 +533,43 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - must use setTimeout
 
 150. Module Resources
+
+**SECTION 11** A look behind the scenes of React and optimization techniques
+
+151. Module Introduction
+
+
+    -
+
+152. How React Really Works
+     7min
+     Play
+153. Component Updates In Action
+     7min
+     Play
+154. A Closer Look At Child Component Re-Evaluation
+     11min
+     Play
+155. Preventing Unnecessary Re-Evaluations with React.memo()
+     12min
+     Play
+156. Preventing Function Re-Creation with useCallback()
+     4min
+     Play
+157. useCallback() and its Dependencies
+     7min
+     Play
+158. A First Summary
+     4min
+     Play
+159. A Closer Look At State & Components
+     4min
+     Play
+160. Understanding State Scheduling & Batching
+     9min
+     Play
+161. Optimizing with useMemo()
+     9min
+     Start
+162. Module Resources
      1min
