@@ -14,7 +14,9 @@ const Cart = (props) => {
 		props.onModalClick(false);
 	};
 
-	const onRemoveHandler = (id) => {};
+	const onRemoveHandler = (id) => {
+		cartCtx.removeItem(id);
+	};
 
 	const onAddHandler = (item) => {};
 

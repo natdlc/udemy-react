@@ -521,8 +521,10 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - technique to leaner ife block
 
 148. Making Items Removable
-     8min
-     Play
+
+    
+    - self activity work: 
+    
 149. Using the useEffect Hook
      8min
      Start
