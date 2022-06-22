@@ -577,7 +577,16 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 156. Preventing Function Re-Creation with useCallback()
 
 
-    -
+    - has dependency array like useEffect
+    - uses an algorithm to make sure previous reference values of props are the same reference values for comparison
+        -
+        ```
+            let obj1 = {}
+            let obj2 = {}
+            obj1 === obj2 // false
+            obj1 = obj2
+            obj1 === obj2 // true
+        ```
 
 157. useCallback() and its Dependencies
      7min
