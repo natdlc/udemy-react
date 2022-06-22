@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useContext } from "react";
 import CartContext from "../../store/cart-context";
 import Modal from "../UI/Modal";
@@ -18,7 +19,13 @@ const Cart = (props) => {
 		cartCtx.removeItem(id);
 	};
 
-	const onAddHandler = (item) => {};
+	const onAddHandler = (item) => {
+		cartCtx.addItem({ ...item, amount: 1 });
+	};
+
+	useEffect(() => {
+		// console.log("from cart modal");
+	}, [cartCtx.items]);
 
 	const cartItems = (
 		<ul className={classes["cart-items"]}>
@@ -33,7 +40,7 @@ const Cart = (props) => {
 						onRemove={onRemoveHandler.bind(null, item.id)}
 						onAdd={onAddHandler.bind(null, item)}
 					/>
-				)
+				);
 			})}
 		</ul>
 	);

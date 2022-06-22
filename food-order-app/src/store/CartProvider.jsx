@@ -39,13 +39,15 @@ const cartReducer = (state, action) => {
 		cartItem.amount--;
 		const updatedTotalAmount = state.totalAmount - cartItem.price;
 
+		const updatedItems = [...state.items];
+
 		if (cartItem.amount === 0) {
 			const cartItemIndex = state.items.indexOf(cartItem);
-			state.items.splice(cartItemIndex, 1);
+			updatedItems.splice(cartItemIndex, 1);
 		}
-		
+
 		return {
-			items: state.items,
+			items: updatedItems,
 			totalAmount: updatedTotalAmount,
 		};
 	}

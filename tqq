@@ -1,0 +1,76 @@
+[33m8c7eb30[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mgithub/main[m[33m)[m remove item from cart self work SUCCESS
+[33mf7a0d6f[m section 11, #147, complex reducer logic'
+[33maeb6c2a[m section 11, #147, working on a more complex reducer logic
+[33mf302490[m section 11, #146, outputting cart items
+[33m7d9df72[m section 11, #145, working with refs & forward refs'
+[33m7589e35[m section 11, #144, adding cart reducer'
+[33me1995e7[m section 11, #143, using context
+[33me1c4eaa[m section 11, #142, adding cart context
+[33mebb1c96[m section 11, #141, cart modal state'
+[33m55f1743[m section #11, #140, adding modal with portal
+[33m0d4ce82[m secction 11, #139, working on shopping cart component
+[33m3d8c834[m section 11, #138, fixing form input ids
+[33mc59f27c[m section 11, #137, adding form (important info present)
+[33mb182fad[m section 11, #136, adding indiv meal items and displaying them through props
+[33m2faf9b0[m section 11, #135, adding meals component
+[33m02065df[m section 11, #133, adding header component section 12, #134, adding cart button component
+[33m9fbbbf1[m section 11, #132, starting setup
+[33mf8d12c2[m file init
+[33m0589a2e[m deleted project
+[33md377e36[m section 10, #129, diving into "forward refs"
+[33m65fa218[m section 10, #128, refactoring input component
+[33m2560c48[m section 10, #127, learning the rules of hooks
+[33m80cb802[m section 10, #126
+[33m163d25c[m section 10, #125
+[33m3df586d[m section 10, #124
+[33m86b356e[m section 10, #123
+[33m4a3707c[m ways to use context api
+[33md85ddc3[m section 10, #121
+[33m3302dc1[m section 10 #119
+[33m4a5b6cb[m section 10, #117
+[33mcb8cb94[m section 10, #116
+[33m17ca561[m new section
+[33mc1856be[m eslint
+[33m3e5fb59[m section 10, #115: useeffect summary
+[33m4f8e327[m section 10, #114
+[33m3329df0[m section 10 #113
+[33mdec8e28[m section 10 #112
+[33m962b585[m section 10, useEffect, #111
+[33me66fb30[m new project section 10
+[33ma23dd2f[m section 10 wip
+[33mc736304[m section 9
+[33m901c553[m deleted other projects for this branch;
+[33m90467bc[m readme
+[33m7acece4[m section 8 complete
+[33m96069fb[m add usr
+[33m6addd38[m error modal
+[33m2623c78[m section 8, #95
+[33mb9f59fc[m self code validation
+[33m5caf892[m completed functionality before explained
+[33mf5461c7[m practice
+[33mb6e12fa[m new project
+[33mf9f5751[m readme app
+[33m5059491[m section 7 #87
+[33mf52e301[m new project
+[33m21bd8b1[m css modules
+[33m1debe36[m new project
+[33mff30a7d[m ignore
+[33m17b2380[m readme modify
+[33m48c543f[m file move, new project
+[33m6a83d47[m wrap up section 5, #72
+[33mde6a59b[m assignment 4 answer
+[33m4105334[m section 5 #68
+[33md56c47b[m section 5, 68
+[33m2695e9a[m section 5 assignment 3
+[33mfbecc49[m s65 wip
+[33mde3fa67[m expenses
+[33mb4f9b5c[m controlled vs uncontrolled components & stateless vs stateful components
+[33m22c6edf[m wip
+[33mb86655d[m init
+[33m4741a47[m composition concept, children concept
+[33m05afd5b[m basic styling intuition by me
+[33m76acb85[m progress
+[33me86dcd2[m clean
+[33m48b83ae[m react app
+[33m2cc9b34[m react test
+[33mc901718[m init repo

@@ -523,8 +523,9 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 148. Making Items Removable
 
     
-    - self activity work: 
-    
+    - self activity work: SUCCESS
+    - added add cart item from cart modal capability
+
 149. Using the useEffect Hook
      8min
      Start
