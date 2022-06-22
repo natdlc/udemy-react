@@ -534,7 +534,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 150. Module Resources
 
-**SECTION 11** A look behind the scenes of React and optimization techniques
+**SECTION 12** A look behind the scenes of React and optimization techniques
 
 151. Module Introduction
 
@@ -543,10 +543,15 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 152. How React Really Works
 
-    - 
+
+    - re-evaluating components !== re-rendering dom
+    - virtual dom diffing
+
 153. Component Updates In Action
-     7min
-     Play
+
+
+    -
+
 154. A Closer Look At Child Component Re-Evaluation
      11min
      Play
