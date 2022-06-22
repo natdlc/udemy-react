@@ -539,11 +539,11 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 151. Module Introduction
 
 
-    -
+    - how react works?
 
 152. How React Really Works
-     7min
-     Play
+
+    - 
 153. Component Updates In Action
      7min
      Play

@@ -31,7 +31,7 @@ const HeaderCartButton = (props) => {
 		}, 300);
 
 		return () => {
-			console.log("unmount");
+			console.log("unmount, timer clears");
 			clearTimeout(timer);
 		};
 	}, [items]);
