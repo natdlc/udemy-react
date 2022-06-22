@@ -42,7 +42,9 @@ useState
 - component renders n times, n instances of useState generates
 - why const? we don't redeclare and change value of variable, react does it for us
 - _ONE STATE_ is possible, not as common as multiple useStates
-- - when using a state's previous value while updating it to a new one inside the state updater function, **ALWAYS** use the callback function form with the "prevState" parameter, **WHY?** to ensure that you always operate on the latest state snapshot, this is because React **SCHEDULES** state updates, it doesn't perform them instantly.
+- when using a state's previous value while updating it to a new one inside the state updater function, **ALWAYS** use the callback function form with the "prevState" parameter, **WHY?** to ensure that you always operate on the latest state snapshot, this is because React **SCHEDULES** state updates, it doesn't perform them instantly.
+- state changes are the only way to make a component re-render, regardless if it comes from context, or arrives to a prop in the lowest level component
+- if a state changes in a component, all child components will be re-rendered, regardless if that child component receives the state value via props / context, as long as it is within the top level component where state is declared
 
 <---> ! <---> <---> ! <---> <---> ! <---> <---> ! <---> <---> ! <--->
 
@@ -553,8 +555,11 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - explained how state changes look in Real DOM
 
 154. A Closer Look At Child Component Re-Evaluation
-     11min
-     Play
+
+
+    - state changes are the only way to make a component re-render, regardless if it comes from context, or arrives to a prop in the lowest level component
+    - if a state changes in a component, all child components will be re-rendered, regardless if that child component receives the state value via props / context, as long as it is within the top level component where state is declared
+
 155. Preventing Unnecessary Re-Evaluations with React.memo()
      12min
      Play
