@@ -550,7 +550,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 153. Component Updates In Action
 
 
-    - 
+    - explained how state changes look in Real DOM
 
 154. A Closer Look At Child Component Re-Evaluation
      11min
