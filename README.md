@@ -527,7 +527,10 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - added add cart item from cart modal capability
 
 149. Using the useEffect Hook
-     8min
-     Start
+
+
+    - self activity work: FAILED
+    - must use setTimeout
+
 150. Module Resources
      1min
