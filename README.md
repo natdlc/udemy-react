@@ -9,6 +9,7 @@ MOST IMPORTANT
 - "react" contains features, state management, etc
 - "react-dom" uses "react" to bring those logic and features to the web browser
 - unmounts from DOM: whenever component is reused
+- understand the difference between **primitive** and **reference** values (for React.memo())
 
 eventprops (custom)
 
@@ -561,11 +562,23 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - if a state changes in a component, all child components will be re-rendered, regardless if that child component receives the state value via props / context, as long as it is within the top level component where state is declared
 
 155. Preventing Unnecessary Re-Evaluations with React.memo()
-     12min
-     Play
+
+
+    - tells react that for component in argument:
+        - react will look at props this component has
+        - check new value for all those props
+        - compare new values to their previous values.
+        - if one of the values of prop changes, the component is re-executed / re-evaluated
+        - if none of the values change, component execution is skipped
+        - note: *does not assure performance enhancement, as it uses an algo that cross checks previous prop values to new ones*
+        - note: *useful for **components with multiple children** that will prevent the unnecessary re-evaluation of these other components*
+        - note: *reference vs primitive values have an impact to how memo() behaves*
+
 156. Preventing Function Re-Creation with useCallback()
-     4min
-     Play
+
+
+    -
+
 157. useCallback() and its Dependencies
      7min
      Play

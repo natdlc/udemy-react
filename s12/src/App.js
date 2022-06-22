@@ -5,11 +5,13 @@ import DemoOutput from "./components/Demo/DemoOutput";
 import "./App.css";
 
 function App() {
-  const [showParagraph, setShowParagraph] = useState(false);
-  
+	const [showParagraph, setShowParagraph] = useState(false);
+
+	console.log("app");
 	const toggleParagraphHandler = () => {
 		setShowParagraph((prevState) => !prevState);
 	};
+
 	return (
 		<div className="app">
 			<h1>Hi there!</h1>
