@@ -610,10 +610,13 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - sample: rendered conditionally
 
 160. Understanding State Scheduling & Batching
-     9min
-     Play
+
+
+    - always use the callback version of the state setter function to ensure that the latest state change is processed, not the snapshot of the latest state by the previous component rendering
+    - two synchronous state setter function in one code block, react batches it and does not mean it will re-evaluate component twice, just once
+
 161. Optimizing with useMemo()
-     9min
-     Start
+
+    - 
 162. Module Resources
      1min
