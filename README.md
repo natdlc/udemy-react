@@ -597,7 +597,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 158. A First Summary
 
 
-    -
+    - summarized
 
 159. A Closer Look At State & Components
      4min
