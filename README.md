@@ -617,8 +617,45 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 161. Optimizing with useMemo()
 
+
     - most often used with arrays, or objects maybe, as it is similar with useCallback, but useCallback is often used for functions
     - used less often than callback
 
 162. Module Resources
+
+**SECTION 13** An alternative way of building components: class-based components
+
+163. Module Introduction
+
+
+    -
+
+164. What & Why
+
+
+    - class Product extends Component {}
+    - render () {return jsx code}
+
+165. Adding a First Class-based Component
+     7min
+     Play
+166. Working with State & Events
+     12min
+     Play
+167. The Component Lifecycle (Class-based Components Only!)
+     5min
+     Play
+168. Lifecycle Methods In Action
+     12min
+     Play
+169. Class-based Components & Context
+     5min
+     Play
+170. Class-based vs Functional Components: A Summary
+     3min
+     Play
+171. Introducing Error Boundaries
+     10min
+     Start
+172. Module Resources
      1min
