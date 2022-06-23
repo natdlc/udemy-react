@@ -577,6 +577,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 156. Preventing Function Re-Creation with useCallback()
 
 
+    - useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders
     - has dependency array like useEffect
     - uses an algorithm to make sure previous reference values of props are the same reference values for comparison
         -
@@ -589,11 +590,15 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
         ```
 
 157. useCallback() and its Dependencies
-     7min
-     Play
+
+
+    - useCallback's dependency array will detect if the states inside it will change
+
 158. A First Summary
-     4min
-     Play
+
+
+    -
+
 159. A Closer Look At State & Components
      4min
      Play
