@@ -635,6 +635,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
     - class Product extends Component {}
     - render () {return jsx code}
+    - class based components cant use react hooks
 
 165. Adding a First Class-based Component
      7min
