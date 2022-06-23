@@ -617,6 +617,8 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 161. Optimizing with useMemo()
 
-    - 
+    - most often used with arrays, or objects maybe, as it is similar with useCallback, but useCallback is often used for functions
+    - used less often than callback
+
 162. Module Resources
      1min
