@@ -600,8 +600,15 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - summarized
 
 159. A Closer Look At State & Components
-     4min
-     Play
+
+
+    - states are initialized the first time the component runs
+    - no new states are created when component re-evaluates
+    - react remembers it already has a state for the re-evaluated component
+    - react updates that state as needed
+    - if component was totally removed from the real DOM, that's the time states are re-initialized
+    - sample: rendered conditionally
+
 160. Understanding State Scheduling & Batching
      9min
      Play
