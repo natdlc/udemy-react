@@ -638,11 +638,15 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - class based components cant use react hooks
 
 165. Adding a First Class-based Component
-     7min
-     Play
+
+
+    - works exactly like function comps
+
 166. Working with State & Events
-     12min
-     Play
+
+
+    -
+
 167. The Component Lifecycle (Class-based Components Only!)
      5min
      Play
