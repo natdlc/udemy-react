@@ -645,7 +645,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 166. Working with State & Events
 
 
-    -
+    - be familiar with why "this" doesnt work in referring to the method defined inside the class object
 
 167. The Component Lifecycle (Class-based Components Only!)
      5min
