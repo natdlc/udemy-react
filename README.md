@@ -648,8 +648,10 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - be familiar with why "this" doesnt work in referring to the method defined inside the class object
 
 167. The Component Lifecycle (Class-based Components Only!)
-     5min
-     Play
+
+
+    - introed
+
 168. Lifecycle Methods In Action
      12min
      Play
