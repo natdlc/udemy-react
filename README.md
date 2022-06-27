@@ -703,11 +703,15 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - if !response.ok {throw new Error}
 
 181. Using useEffect() For Requests
-     6min
-     Play
+
+
+    - useCallback in fetching function to avoid bugs
+
 182. Preparing The Project For The Next Steps
-     6min
-     Play
+
+
+    -
+
 183. Sending a POST Request
      9min
      Play
