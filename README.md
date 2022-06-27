@@ -718,7 +718,45 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - self complete
 
 184. Wrap Up
-     1min
-     Start
+
+
+    -
+
 185. Module Resources
+     1min
+
+**S15** Building custom react hooks
+
+186. Module Introduction
+
+187. What are "Custom Hooks"?
+
+
+    -
+
+188. Creating a Custom React Hook Function
+     7min
+     Play
+189. Using Custom Hooks
+     5min
+     Play
+190. Configuring Custom Hooks
+     6min
+     Play
+191. Onwards To A More Realistic Example
+     7min
+     Play
+192. Building a Custom Http Hook
+     9min
+     Play
+193. Using the Custom Http Hook
+     8min
+     Play
+194. Adjusting the Custom Hook Logic
+     9min
+     Play
+195. Using The Custom Hook In More Components
+     9min
+     Start
+196. Module Resources
      1min
