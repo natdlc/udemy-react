@@ -659,7 +659,9 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 169. Class-based Components & Context
 
-    - 
+
+    - can only use one context per class component with static keyword
+
 170. Class-based vs Functional Components: A Summary
      3min
      Play
