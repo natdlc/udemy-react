@@ -18,9 +18,10 @@ function App() {
 
 	async function fetchMoviesHandler() {
 		setMoviesLoading(true);
+		await new Promise((resolve) => setTimeout(resolve, 1000));
 		const response = await fetch("https://swapi.dev/api/films/");
 		const data = await response.json();
-		setMovies(data.results.map(mapMovies));
+    setMovies(data.results.map(mapMovies));
 		setMoviesLoading(false);
 	}
 
@@ -28,7 +29,7 @@ function App() {
 		fetchMoviesHandler();
 	};
 
-	const moviesDisplay = moviesLoading ? (
+	const moviesView = moviesLoading ? (
 		<p>Loading data...</p>
 	) : (
 		<MoviesList movies={movies} />
@@ -40,7 +41,7 @@ function App() {
 				<button onClick={onFetchMoviesHandler}>Fetch Movies</button>
 			</section>
 
-			<section>{moviesDisplay}</section>
+			<section>{moviesView}</section>
 		</React.Fragment>
 	);
 }
