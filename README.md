@@ -683,15 +683,16 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 176. Our Starting App & Backend
 
-
-    -
-
 177. Sending a GET Request
-     11min
-     Play
+
+
+    - success
+
 178. Using async / await
-     2min
-     Play
+
+
+    - 
+
 179. Handling Loading & Data States
      5min
      Play
