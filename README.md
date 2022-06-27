@@ -663,10 +663,12 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - can only use one context per class component with static keyword
 
 170. Class-based vs Functional Components: A Summary
-     3min
-     Play
+
 171. Introducing Error Boundaries
-     10min
-     Start
+
+
+    - only in class components
+    - wrap components that return an error with error boundary component to make app react to that error without crashing app
+
 172. Module Resources
      1min
