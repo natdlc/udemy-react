@@ -5,34 +5,42 @@ import "./App.css";
 
 function App() {
 	const [movies, setMovies] = useState([]);
+	const [moviesLoading, setMoviesLoading] = useState(false);
+
+	const mapMovies = (movie) => {
+		return {
+			id: movie.episode_id,
+			title: movie.title,
+			releaseDate: movie.release_date,
+			openingText: movie.opening_crawl,
+		};
+	};
 
 	async function fetchMoviesHandler() {
-		let response = await fetch("https://swapi.dev/api/films/");
-		let data = await response.json();
-		setMovies(
-			data.results.map((movie) => {
-				return {
-					id: movie.episode_id,
-					title: movie.title,
-					releaseDate: movie.release_date,
-					openingText: movie.opening_crawl,
-				};
-			})
-		);
+		setMoviesLoading(true);
+		const response = await fetch("https://swapi.dev/api/films/");
+		const data = await response.json();
+		setMovies(data.results.map(mapMovies));
+		setMoviesLoading(false);
 	}
 
 	const onFetchMoviesHandler = () => {
 		fetchMoviesHandler();
 	};
 
+	const moviesDisplay = moviesLoading ? (
+		<p>Loading data...</p>
+	) : (
+		<MoviesList movies={movies} />
+	);
+
 	return (
 		<React.Fragment>
 			<section>
 				<button onClick={onFetchMoviesHandler}>Fetch Movies</button>
 			</section>
-			<section>
-				<MoviesList movies={movies} />
-			</section>
+
+			<section>{moviesDisplay}</section>
 		</React.Fragment>
 	);
 }

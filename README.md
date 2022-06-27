@@ -690,12 +690,10 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 178. Using async / await
 
-
-    - 
-
 179. Handling Loading & Data States
-     5min
-     Play
+
+    - data loading display self completed
+
 180. Handling Http Errors
      11min
      Play
