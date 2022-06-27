@@ -671,4 +671,44 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - wrap components that return an error with error boundary component to make app react to that error without crashing app
 
 172. Module Resources
+
+**S14** Sending HTTP requests (ie connecting to database)
+
+174. How To (Not) Connect To A Database
+
+
+    - always use an API when connecting to a backend / database, don't directly communicate to the database from your react app
+
+175. Using the Star Wars API
+
+176. Our Starting App & Backend
+
+
+    -
+
+177. Sending a GET Request
+     11min
+     Play
+178. Using async / await
+     2min
+     Play
+179. Handling Loading & Data States
+     5min
+     Play
+180. Handling Http Errors
+     11min
+     Play
+181. Using useEffect() For Requests
+     6min
+     Play
+182. Preparing The Project For The Next Steps
+     6min
+     Play
+183. Sending a POST Request
+     9min
+     Play
+184. Wrap Up
+     1min
+     Start
+185. Module Resources
      1min
