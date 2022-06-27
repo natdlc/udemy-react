@@ -698,7 +698,9 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 180. Handling Http Errors
 
 
-    - 
+    - try catch for async await logic
+    - fetch api doesnt throw error based on error codes, axios does this
+    - if !response.ok {throw new Error}
 
 181. Using useEffect() For Requests
      6min
