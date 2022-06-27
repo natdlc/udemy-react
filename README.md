@@ -710,11 +710,13 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 182. Preparing The Project For The Next Steps
 
 
-    -
+    - setup firebase
 
 183. Sending a POST Request
-     9min
-     Play
+
+
+    -
+
 184. Wrap Up
      1min
      Start
