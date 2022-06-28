@@ -761,4 +761,41 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - bind usage
 
 196. Module Resources
-     1min
+
+**S16** Working with forms and user input
+
+197. Module Introduction
+
+198. Our Starting Setup
+
+199. What's So Complex About Forms?
+
+200. Dealing With Form Submission & Getting User Input Values
+
+201. Adding Basic Validation
+
+202. Providing Validation Feedback
+
+203. Handling the "was touched" State
+
+204. React To Lost Focus
+
+205. Refactoring & Deriving States
+
+206. Managing The Overall Form Validity
+
+Assignment 5: Time to Practice: Forms
+
+207. Adding A Custom Input Hook
+
+208. Re-Using The Custom Hook
+
+209. A Challenge For You!
+
+210. Applying Our Hook & Knowledge To A New Form
+
+211. Summary
+
+212. Bonus: Using useReducer()
+
+213. Module Resources
