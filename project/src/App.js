@@ -19,7 +19,7 @@ function App() {
 		url: "https://react-practice-d28a1-default-rtdb.firebaseio.com/tasks.json",
 		logic,
 		logicState: [],
-	});
+  });
 
 	useEffect(() => {
 		fetchedResponse.fetchHandler();

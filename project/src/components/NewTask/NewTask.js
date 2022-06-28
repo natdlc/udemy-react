@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
+
 import useFetch from "../../hooks/use-fetch";
 
 import Section from "../UI/Section";
 import TaskForm from "./TaskForm";
 
 const NewTask = (props) => {
-	const [enteredText, setEnteredText] = useState("");
 
 	const fetchedResponse = useFetch({
 		url: "https://react-practice-d28a1-default-rtdb.firebaseio.com/tasks.json",
@@ -24,13 +23,15 @@ const NewTask = (props) => {
 		},
   });
   
-  console.log('from newtask');
-  console.log(fetchedResponse);
+
+  const createNewTask = (text) => {
+    
+  }
 
 	return (
 		<Section>
 			<TaskForm
-				onEnterTask={fetchedResponse.fetchHandler}
+				onEnterTask={createNewTask}
 				setEnteredText={setEnteredText}
 				loading={fetchedResponse.isLoading}
 			/>

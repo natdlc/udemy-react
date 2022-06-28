@@ -751,10 +751,14 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
     - use ternaries for checking undefined values in custom hook for http requests
 
 194. Adjusting the Custom Hook Logic
-     9min
-     Play
+
+
+    - remember to use useCallbacks when using external dependencies on functions that might trigger infinite loops (objects, functions as dependencies)
+
 195. Using The Custom Hook In More Components
-     9min
-     Start
+
+
+    - bind usage
+
 196. Module Resources
      1min
