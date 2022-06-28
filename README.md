@@ -745,12 +745,11 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 192. Building a Custom Http Hook
 
-
-    -
-
 193. Using the Custom Http Hook
-     8min
-     Play
+
+
+    - use ternaries for checking undefined values in custom hook for http requests
+
 194. Adjusting the Custom Hook Logic
      9min
      Play

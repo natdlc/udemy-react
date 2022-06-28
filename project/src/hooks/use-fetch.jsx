@@ -27,7 +27,8 @@ const useFetch = (request) => {
 		setLogicValue,
 		isLoading,
 		error,
-		fetchHandler,
+    fetchHandler,
+    request
 	};
 };
 
