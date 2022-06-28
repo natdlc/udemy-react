@@ -770,6 +770,11 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 199. What's So Complex About Forms?
 
+
+    - forms / inputs can assume diff states
+    - one or more inputs are invalid
+    - all inputs valid
+
 200. Dealing With Form Submission & Getting User Input Values
 
 201. Adding Basic Validation
