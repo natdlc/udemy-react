@@ -732,7 +732,8 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 187. What are "Custom Hooks"?
 
 
-    -
+    - mechanism of reusing logic
+    - can use react hooks 
 
 188. Creating a Custom React Hook Function
      7min
