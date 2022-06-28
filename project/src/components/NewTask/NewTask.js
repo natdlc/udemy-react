@@ -1,49 +1,37 @@
-import { useState } from 'react';
+import { useEffect, useState } from "react";
+import useFetch from "../../hooks/use-fetch";
 
-import Section from '../UI/Section';
-import TaskForm from './TaskForm';
+import Section from "../UI/Section";
+import TaskForm from "./TaskForm";
 
 const NewTask = (props) => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
 
-  const enterTaskHandler = async (taskText) => {
-    setIsLoading(true);
-    setError(null);
-    try {
-      const response = await fetch(
-				"https://react-practice-d28a1-default-rtdb.firebaseio.com/tasks.json",
-				{
-					method: "POST",
-					body: JSON.stringify({ text: taskText }),
-					headers: {
-						"Content-Type": "application/json",
-					},
-				}
-			);
+	const fetchedResponse = useFetch({
+		url: "https://react-practice-d28a1-default-rtdb.firebaseio.com/tasks.json",
+		head: {
+			method: "POST",
+			body: JSON.stringify({ text: "" }),
+			headers: {
+				"Content-Type": "application/json",
+			},
+		},
+		logic: (data, arg) => {
+			const generatedId = data.name; // firebase-specific => "name" contains generated id
+			const createdTask = { id: generatedId, text: arg };
 
-      if (!response.ok) {
-        throw new Error('Request failed!');
-      }
+			props.onAddTask(createdTask);
+		},
+	});
 
-      const data = await response.json();
-
-      const generatedId = data.name; // firebase-specific => "name" contains generated id
-      const createdTask = { id: generatedId, text: taskText };
-
-      props.onAddTask(createdTask);
-    } catch (err) {
-      setError(err.message || 'Something went wrong!');
-    }
-    setIsLoading(false);
-  };
-
-  return (
-    <Section>
-      <TaskForm onEnterTask={enterTaskHandler} loading={isLoading} />
-      {error && <p>{error}</p>}
-    </Section>
-  );
+	return (
+		<Section>
+			<TaskForm
+				onEnterTask={fetchedResponse.fetchHandler}
+				loading={fetchedResponse.isLoading}
+			/>
+			{fetchedResponse.error && <p>{fetchedResponse.error}</p>}
+		</Section>
+	);
 };
 
 export default NewTask;

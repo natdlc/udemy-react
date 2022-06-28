@@ -1,53 +1,33 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-const useFetch = () => {
+const useFetch = (request) => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState(null);
-	const [tasks, setTasks] = useState([]);
+	const [logicValue, setLogicValue] = useState(request.logicState);
 
-  const fetchTasks = async (taskText) => {
+	const fetchHandler = async (arg) => {
 		setIsLoading(true);
-    setError(null);
-    try {
-      
-			const response = await fetch(
-				"https://react-practice-d28a1-default-rtdb.firebaseio.com/tasks.json"
-      );
-      
-
+		setError(null);
+		try {
+      const response = await fetch(request.url, request.head);
 			if (!response.ok) {
 				throw new Error("Request failed!");
 			}
 
 			const data = await response.json();
-			const loadedTasks = [];
-
-			for (const taskKey in data) {
-				loadedTasks.push({ id: taskKey, text: data[taskKey].text });
-			}
-
-      setTasks(loadedTasks);
-      console.log('goes here');
+			setLogicValue(request.logic(data, arg));
 		} catch (err) {
 			setError(err.message || "Something went wrong!");
 		}
 		setIsLoading(false);
 	};
 
-	useEffect(() => {
-		fetchTasks();
-	}, []);
-
-	const taskAddHandler = (task) => {
-		setTasks((prevTasks) => prevTasks.concat(task));
-	};
-
 	return {
-		taskAddHandler,
-		tasks,
+		logicValue,
+		setLogicValue,
 		isLoading,
 		error,
-		fetchTasks,
+		fetchHandler,
 	};
 };
 
