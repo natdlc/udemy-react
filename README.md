@@ -777,11 +777,16 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 200. Dealing With Form Submission & Getting User Input Values
 
+
+    - validate in backend as well!
+
 201. Adding Basic Validation
 
 202. Providing Validation Feedback
 
 203. Handling the "was touched" State
+
+    - separate "isValid" from "isTouched" states when validating inputs
 
 204. React To Lost Focus
 

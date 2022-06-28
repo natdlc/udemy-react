@@ -1,20 +1,27 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 const SimpleInput = (props) => {
-	const nameInputRef = useRef();
+	const [nameInput, setNameInput] = useState("");
 
 	const nameInputChangeHandler = (e) => {
-		const currentValue = nameInputRef.current.value;
-		console.log(currentValue);
+		setNameInput(e.target.value);
+	};
+
+	const errorMsg = () => alert("name field cant be empty");
+
+	const formSubmitHandler = (e) => {
+		e.preventDefault();
+		if (nameInput.length === 0) return errorMsg();
+		setNameInput("");
 	};
 
 	return (
-		<form>
+		<form onSubmit={formSubmitHandler}>
 			<div className="form-control">
 				<label htmlFor="name">Your Name</label>
 				<input
 					onChange={nameInputChangeHandler}
-					ref={nameInputRef}
+					value={nameInput}
 					type="text"
 					id="name"
 				/>
