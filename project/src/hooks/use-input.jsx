@@ -1,44 +1,48 @@
-import { useState, useReducer } from "react";
+import { useReducer } from "react";
 
 const reducer = (state, action) => {
+	const updatedState = { touched: action.val, value: state.value };
 	switch (action.type) {
-		case "USER_CHANGE":
-			console.log(state);
-			return { value: action.value, valid: state.validator(action.value) };
+		case "CHANGE":
+			return { value: action.val, touched: state.touched };
+		case "BLUR":
+			return updatedState;
+		case "CLICK":
+			return updatedState;
+		case "RESET":
+			return updatedState;
+		default:
+			throw new Error();
 	}
 };
 
 const useInput = (config) => {
-	const initialState = {
+	const [input, dispatchInput] = useReducer(reducer, {
 		value: config.initialValue,
 		touched: false,
-	};
+	});
 
-	const [inputState, dispatchInput] = useReducer(reducer, initialState);
-
-	const [value, setValue] = useState(config.initialValue);
-	const [touched, setTouched] = useState(false);
-
-	let valid = config.validator(value);
-	let invalid = !valid && touched;
+	let valid = config.validator(input.value);
+	let invalid = !valid && input.touched;
 
 	let classes = invalid ? "form-control invalid" : "form-control";
 
 	let errorView = <p className="error-text">{config.errorText}</p>;
 	let errorController = invalid ? errorView : "";
 
-	const changeHandler = (e) => setValue(e.target.value);
+	const changeHandler = (e) =>
+		dispatchInput({ type: "CHANGE", val: e.target.value });
 
-	const blurHandler = (e) => setTouched(true);
-	const clickHandler = (e) => setTouched(false);
+	const blurHandler = (e) => dispatchInput({ type: "BLUR", val: true });
+	const clickHandler = (e) => dispatchInput({ type: "CLICK", val: false });
 
 	const reset = () => {
-		setValue("");
-		setTouched(false);
+		dispatchInput({ type: "CHANGE", val: "" });
+		dispatchInput({ type: "RESET", val: false });
 	};
 
 	return {
-		value,
+		value: input.value,
 		valid,
 		classes,
 		errorController,

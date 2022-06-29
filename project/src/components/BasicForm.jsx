@@ -2,23 +2,19 @@ import useInput from "../hooks/use-input";
 
 const BasicForm = () => {
 	const firstNameValidator = (firstNameVal) => firstNameVal !== "";
+	const lastNameValidator = (lastNameVal) => lastNameVal !== "";
+	const emailValidator = (email) => email !== "" && email.includes("@");
 
 	const firstName = useInput({
 		initialValue: "",
 		validator: firstNameValidator,
 		errorText: "First name can't be empty",
 	});
-
-	const lastNameValidator = (lastNameVal) => lastNameVal !== "";
-
 	const lastName = useInput({
 		initialValue: "",
 		validator: lastNameValidator,
 		errorText: "Last name can't be empty",
 	});
-
-	const emailValidator = (emailValue) =>
-		emailValue !== "" && emailValue.includes("@");
 
 	const email = useInput({
 		initialValue: "",
