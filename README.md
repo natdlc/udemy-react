@@ -782,7 +782,8 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 201. Adding Basic Validation
 
-    - when to validate: 
+
+    - when to validate:
         - when form is submitted
         - when input is losing focus
         - when key is typed
@@ -790,6 +791,7 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 202. Providing Validation Feedback
 
 203. Handling the "was touched" State
+
 
     - separate "isValid" from "isTouched" states when validating inputs
 
@@ -814,3 +816,39 @@ Assignment 5: Time to Practice: Forms
 212. Bonus: Using useReducer()
 
 213. Module Resources
+
+**S17** Practice project: food order app - adding http & forms
+
+Play
+214. Module Introduction
+3min
+Play
+215. Moving "Meals" Data To The Backend
+4min
+Play
+216. Fetching Meals via Http
+9min
+Play
+217. Handling the Loading State
+4min
+Play
+218. Handling Errors
+8min
+Play
+219. Adding A Checkout Form
+11min
+Play
+220. Reading Form Values
+5min
+Play
+221. Adding Form Validation
+12min
+Play
+222. Submitting & Sending Cart Data
+7min
+Play
+223. Adding Better User Feedback
+9min
+Play
+224. Summary
+2min
