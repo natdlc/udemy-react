@@ -1,30 +1,35 @@
 import { useState } from "react";
 
 const useInput = (config) => {
-	const [inputValue, setInputValue] = useState(config.initialInputValue);
-	const [inputTouched, setInputTouched] = useState(false);
+	const [value, setValue] = useState(config.initialValue);
+	const [touched, setTouched] = useState(false);
 
-	const inputIsValid = config.inputValidator(inputValue);
-	const inputIsInvalid = !inputIsValid && inputTouched;
+	let valid = config.validator(value);
+	let invalid = !valid && touched;
 
-	const inputChangeHandler = (event) => {
-		setInputValue(event.target.value);
+	let classes = invalid ? "form-control invalid" : "form-control";
+
+  let errorView = <p className="error-text">{config.errorText}</p>;
+	let errorController = invalid ? errorView : "";
+
+	const changeHandler = (e) => setValue(e.target.value);
+	const blurHandler = (e) => setTouched(true);
+	const clickHandler = (e) => setTouched(false);
+
+	const reset = () => {
+		setValue("");
+		setTouched(false);
 	};
-
-	const inputBlurHandler = (event) => {
-		setInputTouched(true);
-	};
-	const inputClasses = inputIsInvalid ? "form-control invalid" : "form-control";
 
 	return {
-		inputValue,
-    inputIsValid,
-    inputIsInvalid,
-		setInputValue,
-		setInputTouched,
-		inputChangeHandler,
-		inputBlurHandler,
-		inputClasses,
+		value,
+		valid,
+		classes,
+		errorController,
+		changeHandler,
+		blurHandler,
+		clickHandler,
+		reset,
 	};
 };
 
