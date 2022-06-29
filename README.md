@@ -782,6 +782,11 @@ XX. ASSIGNMENT 4 - add new expense button instead of form - when btn clicked, bt
 
 201. Adding Basic Validation
 
+    - when to validate: 
+        - when form is submitted
+        - when input is losing focus
+        - when key is typed
+
 202. Providing Validation Feedback
 
 203. Handling the "was touched" State
